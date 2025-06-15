@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Portfolio technique de Yassine Dinar - Projets BTS SIO SISR en administration systèmes et réseaux" name="description"/>
+<title>Portfolio – Yassine Dinar</title>
+<link href="style.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" as="style"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+<ul class="lang-switch">
+  <li><a href="index.html" title="Français">🇫🇷</a></li>
+  <li><a href="index-en.html" title="English">🇬🇧</a></li>
+</ul>
+
+<header class="site-header">
+<div class="container">
+<h1>Yassine Dinar</h1>
+<nav>
+<ul class="nav-links">
+<li><a href="index.html">Accueil</a></li>
+<li><a href="a-propos.html">À propos</a></li>
+<li><a href="competences.html">Compétences</a></li>
+<li><a href="portfolio.html">Portfolio</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="portfolio-section" data-aos="fade-up">
+  <div class="container">
+    <h2>Mes Réalisations Techniques</h2>
+    <p style="text-align: center; font-size: 1.1rem; margin-bottom: 3rem; opacity: 0.9;">
+      Projets réalisés dans le cadre de ma formation BTS SIO SISR démontrant mes compétences en administration systèmes, réseaux et sécurité.
+    </p>
+    
+    <div class="portfolio-grid">
+
+      <div class="portfolio-card">
+        <div class="project-header">
+          <h3>🌐 Infrastructure Active Directory</h3>
+          <span class="project-tag">Windows Server 2022</span>
+        </div>
+        <p><strong>Contexte :</strong> Mise en place complète d'un domaine Active Directory pour entreprise de 50 utilisateurs.</p>
+        <p><strong>Réalisations :</strong></p>
+        <ul>
+          <li>Installation et configuration Windows Server 2022</li>
+          <li>Création d'une structure organisationnelle (OU) cohérente</li>
+          <li>Gestion des utilisateurs, groupes et permissions</li>
+          <li>Déploiement de stratégies de groupe (GPO)</li>
+        </ul>
+        <p><strong>Technologies :</strong> Active Directory, DNS, DHCP, GPO</p>
+      </div>
+
+      <div class="portfolio-card">
+        <div class="project-header">
+          <h3>🔒 Stratégies de Sécurité GPO</h3>
+          <span class="project-tag">Sécurité</span>
+        </div>
+        <p><strong>Contexte :</strong> Renforcement de la sécurité informatique via les stratégies de groupe.</p>
+        <p><strong>Réalisations :</strong></p>
+        <ul>
+          <li>Politique de mots de passe complexes</li>
+          <li>Restrictions d'accès aux applications</li>
+          <li>Redirection automatique des dossiers utilisateurs</li>
+          <li>Scripts de connexion et déconnexion</li>
+        </ul>
+        <p><strong>Technologies :</strong> Group Policy Management, PowerShell</p>
+      </div>
+
+      <div class="portfolio-card">
+        <div class="project-header">
+          <h3>📊 Supervision avec OCS Inventory</h3>
+          <span class="project-tag">Monitoring</span>
+        </div>
+        <p><strong>Contexte :</strong> Inventaire automatisé et supervision du parc informatique.</p>
+        <p><strong>Réalisations :</strong></p>
+        <ul>
+          <li>Installation serveur OCS Inventory sur Linux</li>
+          <li>Déploiement agents sur postes clients</li>
+          <li>Configuration reporting automatique</li>
+          <li>Tableaux de bord de suivi du parc</li>
+        </ul>
+        <p><strong>Technologies :</strong> OCS Inventory, Apache, MySQL, Linux</p>
+      </div>
+
+      <div class="portfolio-card">
+        <div class="project-header">
+          <h3>⚡ DHCP Failover Haute Disponibilité</h3>
+          <span class="project-tag">Réseau</span>
+        </div>
+        <p><strong>Contexte :</strong> Garantir la continuité de service pour l'attribution d'adresses IP.</p>
+        <p><strong>Réalisations :</strong></p>
+        <ul>
+          <li>Configuration de 2 serveurs DHCP en failover</li>
+          <li>Tests de basculement automatique</li>
+          <li>Mode hot standby et load balancing</li>
+          <li>Documentation des procédures de maintenance</li>
+        </ul>
+        <p><strong>Technologies :</strong> Windows Server DHCP, Load Balancing</p>
+      </div>
+
+      <div class="portfolio-card">
+        <div class="project-header">
+          <h3>💾 Solutions RAID et Stockage</h3>
+          <span class="project-tag">Stockage</span>
+        </div>
+        <p><strong>Contexte :</strong> Implémentation de solutions de stockage redondantes pour la protection des données.</p>
+        <p><strong>Réalisations :</strong></p>
+        <ul>
+          <li>Configuration RAID 0, 1 et 5 sous Linux (mdadm)</li>
+          <li>Tests RAID sous Windows Server</li>
+          <li>Simulation de pannes disques</li>
+          <li>Procédures de reconstruction automatique</li>
+        </ul>
+        <p><strong>Technologies :</strong> Linux mdadm, Windows Storage Spaces</p>
+      </div>
+
+      <div class="portfolio-card">
+        <div class="project-header">
+          <h3>🌐 Site Web Portfolio Personnel</h3>
+          <span class="project-tag">Développement</span>
+        </div>
+        <p><strong>Contexte :</strong> Création d'un site web professionnel pour présenter mes compétences techniques.</p>
+        <p><strong>Réalisations :</strong></p>
+        <ul>
+          <li>Design responsive et moderne (glassmorphism)</li>
+          <li>Optimisation SEO et accessibilité</li>
+          <li>Formulaire de contact fonctionnel</li>
+          <li>Version multilingue (français/anglais)</li>
+        </ul>
+        <p><strong>Technologies :</strong> HTML5, CSS3, JavaScript, Git</p>
+      </div>
+
+      <div class="portfolio-card">
+        <div class="project-header">
+          <h3>🔍 Projet OSINT et Veille Sécuritaire</h3>
+          <span class="project-tag">Cybersécurité</span>
+        </div>
+        <p><strong>Contexte :</strong> Mise en place d'une démarche de veille technologique et sécuritaire.</p>
+        <p><strong>Réalisations :</strong></p>
+        <ul>
+          <li>Analyse de vulnérabilités avec Nmap</li>
+          <li>Capture et analyse de trafic réseau (Wireshark)</li>
+          <li>Recherche d'informations ouvertes (OSINT)</li>
+          <li>Documentation des failles identifiées</li>
+        </ul>
+        <p><strong>Technologies :</strong> Nmap, Wireshark, Kali Linux</p>
+      </div>
+
+      <div class="portfolio-card">
+        <div class="project-header">
+          <h3>🖥️ Environnement de Virtualisation</h3>
+          <span class="project-tag">Virtualisation</span>
+        </div>
+        <p><strong>Contexte :</strong> Création d'un laboratoire virtualisé pour tests et développement.</p>
+        <p><strong>Réalisations :</strong></p>
+        <ul>
+          <li>Déploiement VMware Workstation avec 8 VM</li>
+          <li>Réseau virtuel complexe (routage inter-VLAN)</li>
+          <li>Snapshots et gestion des ressources</li>
+          <li>Tests de montée en charge</li>
+        </ul>
+        <p><strong>Technologies :</strong> VMware Workstation, VirtualBox</p>
+      </div>
+
+    </div>
+
+    <div class="portfolio-note" style="text-align: center; margin-top: 3rem; padding: 2rem; background: rgba(255,255,255,0.05); border-radius: 15px;">
+      <h3 style="color: #90caf9; margin-bottom: 1rem;">💡 Projets en Cours</h3>
+      <p>Actuellement en développement : Mise en place d'un serveur de monitoring avec Nagios et configuration d'un pare-feu pfSense avec règles avancées.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+<div class="container">
+<p>© 2025 Yassine Dinar. Tous droits réservés.</p>
+<ul class="footer-links">
+<li><a href="index.html">Accueil</a></li>
+<li><a href="a-propos.html">À propos</a></li>
+<li><a href="competences.html">Compétences</a></li>
+<li><a href="portfolio.html">Portfolio</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+</footer>
+
+<style>
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.project-tag {
+  background: linear-gradient(45deg, #2196f3, #21cbf3);
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.portfolio-card ul {
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+}
+
+.portfolio-card li {
+  margin-bottom: 0.5rem;
+  opacity: 0.9;
+}
+
+.portfolio-card p {
+  margin-bottom: 0.8rem;
+}
+
+.portfolio-note {
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+</style>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+
+</body>
+</html>

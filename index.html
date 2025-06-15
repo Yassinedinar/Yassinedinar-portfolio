@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Yassine Dinar - Étudiant BTS SIO SISR recherchant alternance en administration systèmes et réseaux" name="description"/>
+<title>Accueil – Yassine Dinar | Étudiant BTS SIO SISR</title>
+<link href="style.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" as="style"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+<ul class="lang-switch">
+  <li><a href="index.html" title="Français">🇫🇷</a></li>
+  <li><a href="index-en.html" title="English">🇬🇧</a></li>
+</ul>
+
+<div id="loader-wrapper">
+  <div id="loader"></div>
+</div>
+
+<header class="site-header">
+<div class="container">
+<h1>Yassine Dinar</h1>
+<nav>
+<ul class="nav-links">
+<li><a href="index.html">Accueil</a></li>
+<li><a href="a-propos.html">À propos</a></li>
+<li><a href="competences.html">Compétences</a></li>
+<li><a href="portfolio.html">Portfolio</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero" style="background: url('images/banner.png') center/cover no-repeat;">
+<div class="overlay">
+<div class="hero-content" data-aos="fade-up">
+<div class="hero-profile" style="display: flex; align-items: center; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap; justify-content: center;">
+<img src="images/yassine-photo.jpg" alt="Photo professionnelle de Yassine Dinar" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 3px solid #2196f3; box-shadow: 0 4px 20px rgba(33, 150, 243, 0.3);">
+<div style="text-align: left;">
+<h2 style="margin-bottom: 0.5rem;">Yassine Dinar</h2>
+<h3 style="font-size: 1.8rem; margin-bottom: 0.5rem; color: #90caf9;">Étudiant BTS SIO SISR</h3>
+</div>
+</div>
+<p>Recherche une alternance en administration systèmes et réseaux. Passionné par l'infrastructure IT et la cybersécurité.</p>
+<a href="contact.html" class="btn">Me contacter</a>
+</div>
+</div>
+</section>
+
+<section class="presentation">
+<div class="container">
+<h2>Qui suis-je ?</h2>
+<p>Étudiant motivé en BTS Services Informatiques aux Organisations, spécialisation Solutions d'Infrastructure, Systèmes et Réseaux (SISR). Je recherche activement une alternance pour ma 2ème année afin de mettre en pratique mes compétences techniques dans un environnement professionnel.</p>
+</div>
+</section>
+
+<section class="objectifs" data-aos="fade-up">
+<div class="container">
+<h2>Mes Objectifs</h2>
+<div class="objectifs-grid">
+<div class="objectif-card">
+<h3>🎯 Objectif immédiat</h3>
+<p>Trouver une alternance en administration systèmes et réseaux pour ma 2ème année de BTS SIO SISR.</p>
+</div>
+<div class="objectif-card">
+<h3>🚀 Objectif à court terme</h3>
+<p>Obtenir mon BTS et poursuivre vers une licence d'administrateur réseau.</p>
+</div>
+<div class="objectif-card">
+<h3>💼 Objectif professionnel</h3>
+<p>Devenir expert en infrastructure IT et cybersécurité dans une entreprise dynamique.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<footer class="site-footer">
+<div class="container">
+<p>© 2025 Yassine Dinar. Tous droits réservés.</p>
+<ul class="footer-links">
+<li><a href="index.html">Accueil</a></li>
+<li><a href="a-propos.html">À propos</a></li>
+<li><a href="competences.html">Compétences</a></li>
+<li><a href="portfolio.html">Portfolio</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+</footer>
+
+<script>
+  // Theme toggle
+  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme) {
+    document.body.classList.toggle('light', savedTheme === 'light');
+  } else if (!prefersDark) {
+    document.body.classList.add('light');
+  }
+
+  function toggleTheme() {
+    document.body.classList.toggle('light');
+    localStorage.setItem('theme', document.body.classList.contains('light') ? 'light' : 'dark');
+  }
+
+  // Smooth scrolling
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+  });
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
+<script>
+  window.addEventListener("load", function() {
+    document.body.classList.add("loaded");
+  });
+</script>
+
+</body>
+</html>
